@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Movie App</title
+</head>
+<body>
+    <div id="app-container">
+        <h1>Movie Rating App!</h1>
+        <div id="form-container">
+            <form action="">
+            <label for="movie-rating">Movie Name:</label>
+            <input type="text"  id="movie-name">
+            <label for="movie-rating">Rating:</label>
+            <input type="number" id="movie-rating" min='0' max='10' required>
+            <button type="submit" id="submit-form">Submit</button>
+            </form>
+        </div>
+        <div id='display-table'>
+            <div>
+                <div class="table-title"><h2>Movie Name</h2> <label for="sort-ratings">&nbsp Sort A-Z</label><input type="checkbox" name="" id="sort-names"></div>
+                <div id="movie-name-list">
+                </div>
+            </div>
+            <div>
+                <div class="table-title"><h2>Movie Rating</h2><label for="sort-names">&nbsp Sort 1-10</label><input type="checkbox" name="" id="sort-ratings"></div>
+                <div id="movie-rating-list">
+                </div>
+            </div>
+            <div>
+                <h2>Delete</h2>
+                <div id="buttons">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
